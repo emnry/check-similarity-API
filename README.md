@@ -2,13 +2,13 @@
 
 Cette API permet d'obtenir la similarité sémantique entre deux mots français (/similarity)
 
-Elle utilise un modèle Word2Vec préentraîné en français fourni par Jean-Philippe Fauconnier.
+Elle utilise un modèle Word2Vec préentraîné en français fourni par FastText.
 
 ## 🔧 Prérequis
 * Python 3.7+
 * pip
-* Un modèle Word2Vec binaire préentraîné : `https://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_500_skip_cut100.bin`
-  ou autre modèle sur `http://fauconnier.github.io/#data` (nécessite un changement du nom dans le MODEL_PATH de app.py)
+* Un modèle Word2Vec binaire préentraîné : `https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fr.300.bin.gz`
+  ou autre modèle sur `https://fasttext.cc/docs/en/crawl-vectors.html` (nécessite un changement du nom dans le MODEL_PATH de app.py)
 
 ## 📦 Installation
 
@@ -47,7 +47,7 @@ Placer le model Word2Vec dans un nouveau dossier `models`
 │   └──...
 ├── app.py
 ├── models/
-│   └── frWac_non_lem_no_postag_no_phrase_500_skip_cut100.bin
+│   └── cc.fr.300.bin
 ├── requirements.txt
 └── README.md
 
