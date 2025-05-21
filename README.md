@@ -1,1 +1,1 @@
-# check-similarity-API
+# checkSimilarityAPI
